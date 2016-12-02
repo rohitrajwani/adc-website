@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <title>Aavartan IIITDMJ</title>
+      
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+      <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+      
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      
+      <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/style.css" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,11 +20,143 @@
 
   <body>
 
-
+      <header>
+          <nav class="top z-depth-1-half">
+              <a class="brand-logo center">Aavartan - The Dance Club</a>
+          </nav>
+          <nav class="left">
+              <ul>
+                <li class="tab-link active" data-tab="home"><a><i class="fa fa-home"></i>Home</a></li>
+                <li class="tab-link" data-tab="about"><a><i class="fa fa-info"></i>About</a></li>
+                <li class="tab-link" data-tab="events"><a><i class="fa fa-calendar"></i>Events</a></li>
+              </ul>
+          </nav>
+          <nav class="right">
+              <ul>
+                <li class="tab-link" data-tab="team"><a><i class="fa fa-users"></i>Team</a></li>
+                <li class="tab-link" data-tab="office"><a><i class="fa fa-user-o"></i>Office<br>Bearers</a></li>
+                <li class="tab-link" data-tab="gallery"><a><i class="fa fa-picture-o"></i>Gallery</a></li>
+              </ul>
+          </nav>
+          
+          <div class="row container">
+              <section id="home" class="tab-content home active wow">
+                  <div class="mask" id="particle-slider">
+                    <iframe src="particle.html"></iframe>
+                  </div>
+              </section>
+              <section id="about" class="tab-content about wow"> 
+                    <h4 class="col s12 m4 offset-m4">About the Club</h4>
+                    <p class="col s12 m8 offset-m2">Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once they have finished scrolling through the current page or are looking for additional information about your website.
+<br><br>
+Introduction
+Note: We use flexbox to structure our html so that the footer is always on the bottom of the page. It is important to keep the structure of your page within the 3 HTML5 tag
+                  
+                  </p>
+              </section>
+              <section id="events" class="tab-content events wow"> 
+                    <h4 class="col s12 m4 offset-m4">Club Events</h4>
+                    <p class="col s12 m8 offset-m2">Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once they have finished scrolling through the current page or are looking for additional information about your website.
+<br><br>
+Introduction
+Note: We use flexbox to structure our html so that the footer is always on the bottom of the page. It is important to keep the structure of your page within the 3 HTML5 tag
+                  
+                  </p>
+              </section>
+              <section id="team" class="tab-content events wow"> 
+                    <h4 class="col s12 m4 offset-m4">Our Team</h4>
+                    <div class="team-container col s12 m10 offset-m1">
+                        <div class="mycard-container col s12 m3">
+                            <div class="mycard col s12 hoverable">
+                                <img src="images/logo.jpg" class="col s12">
+                                <h5 class="col s12">Name here</h5>
+                            </div>
+                        </div>
+                        <div class="mycard-container col s12 m3">
+                            <div class="mycard col s12 hoverable">
+                                <img src="images/logo.jpg" class="col s12">
+                                <h5 class="col s12">Name here</h5>
+                            </div>
+                        </div>
+                        <div class="mycard-container col s12 m3">
+                            <div class="mycard col s12 hoverable">
+                                <img src="images/logo.jpg" class="col s12">
+                                <h5 class="col s12">Name here</h5>
+                            </div>
+                        </div>
+                        <div class="mycard-container col s12 m3">
+                            <div class="mycard col s12 hoverable">
+                                <img src="images/logo.jpg" class="col s12">
+                                <h5 class="col s12">Name here</h5>
+                            </div>
+                        </div>
+                    </div>
+              </section>
+              <section id="office" class="tab-content events wow"> 
+                    <h4 class="col s12 m4 offset-m4">Office Bearers</h4>
+                    <div class="mycard-container col s12 m5 offset-m1">
+                        <div class="mycard col s6 offset-s3 hoverable">
+                            <img src="images/logo.jpg" class="col s12">
+                            <h5 class="col s12">Name here</h5>
+                            <h6 class="col s12">Contact No. Here</h6>
+                            <a href="#"><i class="fa fa-facebook col s6"></i></a>
+                            <a href="#"><i class="fa fa-envelope col s6"></i></a>
+                        </div>
+                    </div>
+                    <div class="mycard-container col s12 m5">
+                        <div class="mycard col s6 offset-s3 hoverable">
+                            <img src="images/logo.jpg" class="col s12">
+                            <h5 class="col s12">Name here</h5>
+                            <h6 class="col s12">Contact No. Here</h6>
+                            <a href="#"><i class="fa fa-facebook col s6"></i></a>
+                            <a href="#"><i class="fa fa-envelope col s6"></i></a>
+                        </div>
+                    </div>
+              </section>
+              <section id="gallery" class="tab-content events wow"> 
+                    <h4 class="col s12 m4 offset-m4">Gallery</h4>
+                    
+              </section>
+          
+          </div>
+          
+      </header>
+      <footer>
+            <div class="footer-copyright">
+                <span class="grey-text text-darken-2">&nbsp;©2016 Aavartan IIITDMJ</span>
+                <span class="grey-text text-darken-1 right" href="#!">Designed and Developed by <a href="#" class="grey-text text-darken-4">Rohit Rajwani </a>&nbsp;</span>
+            </div>
+      </footer>
 
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function(){
+            $('nav ul li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+                
+                $('nav ul li').removeClass('active');
+                $('.tab-content').removeClass('active');
+                
+                $(this).addClass('active');
+                setTimeout(function(){
+                    if(tab_id == "home")
+                        $("#"+tab_id).addClass('active fadeIn');
+                    else if(tab_id == "about" || tab_id == "events")
+                        $("#"+tab_id).addClass('active slideInLeft');
+                    else
+                        $("#"+tab_id).addClass('active slideInRight');
+                },300);
+            })    
+        })  
+      
+      
+    </script> 
   </body>
 </html>
