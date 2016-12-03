@@ -28,50 +28,53 @@ nav ul li a{
     color: grey;
 }
 
-nav a.brand-logo{
+a.brand-logo{
     color: #412d8c;
-    color: white;
+    color: whitesmoke;
     height: 55px;
-    line-height: 1.75;
     font-weight: 300;
+    font-family: 'Pacifico' ,cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: -50px;
 }
-
+    
 nav.top{
     position: fixed;
     height: 55px;
     z-index: 1;
-    background-color: #673AB7;
+    background-color: #3b5998;
+    
 /*    box-shadow: 0 1px 2px 0 rgba(65, 45, 140, 0.7), 0 1px 2px 0 rgba(65, 45, 140, 0.75);*/
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 nav.right{
     position: fixed;
     top: 0px;
     right: 0px;
-    width: 60px;
+    width: 70px;
     height: 100%;
-    box-shadow: 0 1px 5px 0 rgba(65, 45, 140, 0.4), 0 1px 4px 0 rgba(65, 45, 140, 0.7);
+    box-shadow: 0 1px 5px 0 #3b5998, 0 1px 4px 0 #3b5998;
+    background-color: white;
 }
 
 nav.left{
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 60px;
+    width: 70px;
     height: 100%;
-    box-shadow: 0 1px 5px 0 rgba(65, 45, 140, 0.4), 0 1px 4px 0 rgba(65, 45, 140, 0.7);
+    box-shadow: 0 1px 5px 0 #3b5998, 0 1px 4px 0 #3b5998;
 }
-
-
 
 footer{
     position: fixed;
     bottom: 0px;
-    left: 60px;
-    right: 60px;
+    left: 70px;
+    right: 70px;
     height: 40px;
-    border-top: 1px solid rgba(103, 58, 183, 0.6);
+    border-top: 1px solid rgba(59, 89, 152, 0.79);
     z-index: -1;
 }
 
@@ -86,7 +89,7 @@ nav ul{
 }
 
 nav ul li{
-    width: 60px;
+    width: 70px;
     height: 150px;
 }
 
@@ -96,19 +99,19 @@ nav ul li a{
     text-align: center;
     line-height: 1.25;
     transition: 300ms;
-    color: rgba(65, 45, 140, 0.76);
+    color: #3b5998;
 }
 
 nav ul li a:hover{
     background-color: rgba(0,0,0,0);
-    color: #673AB7;
+    color: #2f497e;
 }
 
 nav ul li a i.fa{
     display: block;
     font-size: 2.5em;
     line-height: 1.5;
-    color: rgba(65, 45, 140, 0.76);
+    color: #3b5998;
 }
 
 nav ul li a img{
@@ -118,27 +121,27 @@ nav ul li a img{
 
 nav ul li.active a{
     background-color: rgba(255, 255, 255, 0.72);
-    color: #673AB7;
+    color: #3b5998;
 }
 
 .container{
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;
-    top: 55px;
-    left: 60px;
+    top: 0px;
+    left: 70px;
     bottom: 40px;
-    width: 91.25%;
+    width: 89.7%;
+    padding-top: 55px;
 }
         
 .container section{
     display: none;
     position: absolute;
-    top: 0px;
+    top: 50px;
     bottom: 0px;
     right: 0px;
     left: 0px;
-    
 }
 
 .container section.active{
@@ -178,9 +181,29 @@ section h4{
     position: relative;
     top: 20px;
     text-align: center;
-    font-family: "Brush Script MT" , sans-serif;
-    font-size: 3.5em;
-    color: rgba(95, 56, 165, 0.88);
+    font-family: 'Inconsolata' ,cursive;
+    font-size: 2.5em;
+    color: #3b5998;
+}
+
+section h4::after{
+    content: "";
+    display: block;
+    margin-top: 10px;
+    height: 1px;
+    width: 90%;
+    margin-left: 5%;
+    background: rgba(51, 51, 51, 0.24);
+}
+
+section h4::before{
+    content: "";
+    display: block;
+    margin-bottom: 5px;
+    height: 1px;
+    width: 90%;
+    margin-left: 5%;
+    background: rgba(51, 51, 51, 0.24);
 }
 
 section p{
@@ -188,7 +211,7 @@ section p{
     letter-spacing: 0.5px;
     word-spacing: 0.75px;
     line-height: 1.65;
-    color: rgba(0,0,0,0.95);
+    color: rgba(0,0,0,0.9);
 }
 
 
@@ -211,8 +234,16 @@ section.about{
 */
 }
 
+.mycard-container{
+    padding: 10px 0px !important;
+}
+
 .mycard{
     padding: 10px 0px !important;
+}
+
+.mycard:hover{
+    background-color: white;
 }
 
 .mycard img{
@@ -223,12 +254,14 @@ section.about{
     margin: 5px 0px;
     text-align: center;
     line-height: 2;
+    font-size: 1.35em;
 }
 
 .mycard h6{
     margin: 2px 0px;
     line-height: 1.5;
     text-align: center;
+    font-size: 1.1em;
 }
 
 .mycard i.fa{
@@ -244,11 +277,18 @@ section.about{
 
 .mycard i.fa-envelope{
     color: 	#3b5998;
-    transition: 300ms;
+    transition: 500ms;
 }
 
 .mycard i.fa-facebook:hover, .mycard i.fa-envelope:hover{
-    color:#412d8c;
+    color:#fff;
+    background-color: #3b5998;
+}
+
+section .patch{
+    background-color: rgba(242, 242, 242, 0.74);
+    margin-left: 12px !important;
+    width: calc(100% - 24px) !important;
 }
 
 .team-container{
@@ -259,6 +299,87 @@ section.about{
     padding: 10px 10px !important;
 }
 
+.team-container .mycard:hover{
+    background-color: white;
+}
+
 .team-container .mycard img{
     height: 220px;
+}
+
+section.gallery .gallery-container{
+    padding: 0px 10px !important;
+    margin-top: 10px;
+}
+
+section.gallery .category.col{
+    padding: 05px;
+    margin: -25px 0px 30px 0px;;
+}
+
+section.gallery ul.tabs .tab a{
+    color: #3b5998;
+}
+
+section.gallery ul.tabs .tab a:hover{
+    color: rgba(59, 89, 152, 0.87);
+}
+
+section.gallery ul.tabs .indicator{
+    background-color:  rgba(59, 89, 152, 0.4);
+    height: 1.5px;
+}
+
+section.events{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+section.events .event-slider.m10{
+    border-radius: 0px;
+    width: 99%;
+    margin-left: 0.5%;
+}
+
+section.events .event-slider{
+    margin-top: -20px;
+    height: 78%;
+    padding: 0px;
+}
+
+#event-slider .item{
+    display: block;
+    width: 100%;
+}
+
+section.events .event-slider h5.event-name{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+section.events .event-slider .event-thumbnail,section.events .event-slider .event-thumbnail img{
+    height: 350px;
+}
+
+section.events .event-slider .event-thumbnail img{
+    border: 5px solid white;
+    padding: 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+section.events .event-slider .event-details h5{
+    text-align: center;
+    color: #3c4965;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+section.events .event-slider .event-details p{
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0.75px;
+    word-spacing: 1px;
+    line-height: 1.75;
+    font-size: 1.05em;
 }

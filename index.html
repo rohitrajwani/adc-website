@@ -3,8 +3,10 @@
   <head>
       <title>Aavartan IIITDMJ</title>
       
+      <link rel="shortcut icon" href="images/logo-transparent.png">
+      
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Inconsolata" rel="stylesheet">
       
       <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
       
@@ -12,6 +14,7 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       
       <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/owl.carousel.css" />
       <link rel="stylesheet" href="css/style.css" />
 
     <!--Let browser know website is optimized for mobile-->
@@ -21,8 +24,8 @@
   <body>
 
       <header>
-          <nav class="top z-depth-1-half">
-              <a class="brand-logo center">Aavartan - The Dance Club</a>
+          <nav class="top z-depth-1-half row">
+              <a class="brand-logo col s12 m8 offset-m2">Never miss a chance to Dance!!</a>
           </nav>
           <nav class="left">
               <ul>
@@ -55,17 +58,63 @@ Note: We use flexbox to structure our html so that the footer is always on the b
                   </p>
               </section>
               <section id="events" class="tab-content events wow"> 
-                    <h4 class="col s12 m4 offset-m4">Club Events</h4>
-                    <p class="col s12 m8 offset-m2">Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once they have finished scrolling through the current page or are looking for additional information about your website.
-<br><br>
-Introduction
-Note: We use flexbox to structure our html so that the footer is always on the bottom of the page. It is important to keep the structure of your page within the 3 HTML5 tag
-                  
-                  </p>
+                  <h4 class="col s12 m4 offset-m4">Club Events</h4>
+                  <div class="event-slider owl-carousel col s12 m10" id="event-slider">
+                      <div class="item col s12">
+                        <div class="col s12 m10 offset-m1">
+                              <h5 class="event-name col s12">Event-Name</h5>
+                              <div class="event-thumbnail col 12 m5">
+                                  <img class="col s12" src="images/bg.jpg">
+                              </div>
+                              <div class="event-details col s12 m6 offset-m1">
+                                  <div class="date col s12">
+                                      <h5>Competion name here</h5>
+                                  </div>
+                                  <div class="details col s12">
+                                      <p>Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once they have finished scrolling through the current page or are looking for additional information about your website.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item col s12">
+                        <div class="col s12 m10 offset-m1">
+                              <h5 class="event-name col s12">Event-Name</h5>
+                              <div class="event-thumbnail col 12 m5">
+                                  <img class="col s12" src="images/bg.jpg">
+                              </div>
+                              <div class="event-details col s12 m6 offset-m1">
+                                  <div class="date col s12">
+                                      <h5>Competion name here</h5>
+                                  </div>
+                                  <div class="details col s12">
+                                      <p>Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once they have finished scrolling through the current page or are looking for additional information about your website.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item col s12">
+                        <div class="col s12 m10 offset-m1">
+                              <h5 class="event-name col s12">Event-Name</h5>
+                              <div class="event-thumbnail col 12 m5">
+                                  <img class="col s12" src="images/bg.jpg">
+                              </div>
+                              <div class="event-details col s12 m6 offset-m1">
+                                  <div class="date col s12">
+                                      <h5>Competion name here</h5>
+                                  </div>
+                                  <div class="details col s12">
+                                      <p>Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once they have finished scrolling through the current page or are looking for additional information about your website.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
               </section>
               <section id="team" class="tab-content events wow"> 
                     <h4 class="col s12 m4 offset-m4">Our Team</h4>
-                    <div class="team-container col s12 m10 offset-m1">
+                    <div class="patch col s12">
+                        <div class="team-container col s12 m10 offset-m1">
                         <div class="mycard-container col s12 m3">
                             <div class="mycard col s12 hoverable">
                                 <img src="images/logo.jpg" class="col s12">
@@ -90,11 +139,13 @@ Note: We use flexbox to structure our html so that the footer is always on the b
                                 <h5 class="col s12">Name here</h5>
                             </div>
                         </div>
+                    </div>
                     </div>
               </section>
               <section id="office" class="tab-content events wow"> 
                     <h4 class="col s12 m4 offset-m4">Office Bearers</h4>
-                    <div class="mycard-container col s12 m5 offset-m1">
+                    <div class="col s12 patch">
+                        <div class="mycard-container col s12 m5 offset-m1">
                         <div class="mycard col s6 offset-s3 hoverable">
                             <img src="images/logo.jpg" class="col s12">
                             <h5 class="col s12">Name here</h5>
@@ -103,7 +154,7 @@ Note: We use flexbox to structure our html so that the footer is always on the b
                             <a href="#"><i class="fa fa-envelope col s6"></i></a>
                         </div>
                     </div>
-                    <div class="mycard-container col s12 m5">
+                        <div class="mycard-container col s12 m5">
                         <div class="mycard col s6 offset-s3 hoverable">
                             <img src="images/logo.jpg" class="col s12">
                             <h5 class="col s12">Name here</h5>
@@ -112,10 +163,34 @@ Note: We use flexbox to structure our html so that the footer is always on the b
                             <a href="#"><i class="fa fa-envelope col s6"></i></a>
                         </div>
                     </div>
+                  </div>
               </section>
-              <section id="gallery" class="tab-content events wow"> 
+              <section id="gallery" class="tab-content gallery wow"> 
                     <h4 class="col s12 m4 offset-m4">Gallery</h4>
+<!--
                     
+                    <div id="gallery-container" class="gallery-container col s12 m10 offset-m1">
+                        <img class="col s6 m3 mix dbeats" src="images/bg-1.jpg">
+                        <img class="col s6 m3 mix wcell" src="images/bg-2.jpg">
+                        <img class="col s6 m3 mix dbeats" src="images/bg-1.jpg">
+                        <img class="col s6 m3 mix sessions" src="images/bg-1.jpg">
+                        <img class="col s6 m3 mix wcell" src="images/bg-1.jpg">
+                        <img class="col s6 m3 mix dbeats" src="images/bg-1.jpg">
+                        <img class="col s6 m3 mix sessions" src="images/bg-1.jpg">
+                        <img class="col s6 m3 mix trips" src="images/bg-1.jpg">
+                    </div>
+-->
+                    <div class="category col s12">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab col s3"><a class="active"  href="#dbeats">Dance beats</a></li>
+                            <li class="tab col s3"><a href="#wcell">Women Cell</a></li>
+                            <li class="tab col s3"><a href="#sessions">Sessions</a></li>
+                            <li class="tab col s3"><a href="#trips">Trips</a></li>
+                        </ul>
+                    </div>
+                    <div id="test1" class="col s12">Test 1</div>
+                    <div id="test2" class="col s12">Test 2</div>
+                    <div id="test3" class="col s12">Test 3</div>s
               </section>
           
           </div>
@@ -135,6 +210,13 @@ Note: We use flexbox to structure our html so that the footer is always on the b
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+      <script>
+        $(function(){
+            $('#gallery-container').mixItUp();
+        });
+      </script>
     <script>
         new WOW().init();
         $(document).ready(function(){
@@ -146,17 +228,32 @@ Note: We use flexbox to structure our html so that the footer is always on the b
                 
                 $(this).addClass('active');
                 setTimeout(function(){
-                    if(tab_id == "home")
+                    if(tab_id == "home" || tab_id == "events")
                         $("#"+tab_id).addClass('active fadeIn');
-                    else if(tab_id == "about" || tab_id == "events")
+                    else if(tab_id == "about")
                         $("#"+tab_id).addClass('active slideInLeft');
                     else
                         $("#"+tab_id).addClass('active slideInRight');
                 },300);
             })    
-        })  
-      
-      
+            $('.materialboxed').materialbox();
+            $('ul.tabs').tabs();
+            $("#event-slider").owlCarousel({
+                  navigation : true, // Show next and prev buttons
+                  slideSpeed : 500,
+                  paginationSpeed : 400,
+                  singleItem:true
+                  // "singleItem:true" is a shortcut for:
+                  // items : 1, 
+                  // itemsDesktop : false,
+                  // itemsDesktopSmall : false,
+                  // itemsTablet: false,
+                  // itemsMobile : false
+            });
+        });
+        
+        
     </script> 
+
   </body>
 </html>
