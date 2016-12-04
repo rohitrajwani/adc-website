@@ -227,11 +227,31 @@ section p::after{
 }
 
 section.about{
-/*
     background-image: url(../images/bg-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
-*/
+    background-size: cover;
+}
+
+section.about .mask.col{
+    padding: 0px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+section.about h4{
+    color: white;
+}
+
+section.about h4::after{
+    background-color: #fff;
+    width: 40%;
+    margin-left: 30%;
+}
+
+section.about p{
+    color: #fff;
+    font-weight: 300;
 }
 
 .mycard-container{
