@@ -1,1 +1,1 @@
-# programming-club-IIITDM
+# Aavartan - The dance club of IIITDM Jabalpur
